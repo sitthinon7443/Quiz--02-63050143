@@ -1,0 +1,52 @@
+
+body{
+    margin: 0;
+    background-color: #666666;
+    background-image: url('https://cdn.pixabay.com/photo/2013/03/19/23/07/easter-bunny-95096_960_720.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+   
+.search-field {
+    width: 10%; /*ไว้เสิร์ทข้อมูล */
+    margin-bottom: 20px; /*ความกว้างของช่องเสิร์ทข้อมูล*/
+    border-radius: 20px; /*ระยะห่างของตัวเสิร์ทข้อมูล*/
+    font-size: 20px; /*ขนาดตัวหนังสือ*/
+    border: 1px solid rgb(40, 21, 19); /*ความหนาของเส้นกรอบ  เเละสี*/
+    padding: 5px; /*ความกว้างของช่องเสิร์ท*/
+    text-align: center;/* ให้ข้อความอยู่ตรงกลาง*/
+  }
+  
+  
+  
+  .products-container {
+    /*คลาสของกล่องข้อมูล*/
+    display: flex;/*ทำให้กล่องข้อมูลอยู่ตรงกลาง */
+    flex-wrap: wrap;/*ถ้ากล่องข้อมูลมันเกินหน้าจอจะขึ้นบันทัดใหม่*/
+    gap: 15px;/*ระยะห่างระหว่างกล่อง*/
+    justify-content: center; /*ถ้ากล่องมากกว่า1 จะัดให้อยู่ตรงกลาง*/
+  }
+  
+  .product-card {
+
+    width: 250px; /*ความกว้าง*/
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);/*เงาของกรอบ*/
+  }
+  
+  .product-card > img {
+    width: 100%;/*ความกว้าง*/
+    height: 150px;/*ความสูง*/
+  }
+  
+  .card-content {
+    padding: 5px;/*ระยะห่างของขอบด้านในกล่อง กับข้อความ*/
+  }
+  
+  .card-footer {
+    padding-inline: 5px; /*กาารจัดข้อมู*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
